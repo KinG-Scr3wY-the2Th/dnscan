@@ -266,8 +266,8 @@ def setup():
     # Number of threads should be between 1 and 32
     if args.threads < 1:
         args.threads = 1
-    elif args.threads > 32:
-        args.threads = 32
+    elif args.threads > 132:
+        args.threads = 132
     queue = Queue.Queue()
     resolver = dns.resolver.Resolver()
     resolver.timeout = 1
